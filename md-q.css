@@ -1,0 +1,176 @@
+ /* Media query for small screens (e.g., phones) */
+@media only screen and (max-width: 600px) {
+    /* Remove the navigation bar */
+    nav {
+      display: none;
+    }
+  
+    #poster {
+      height: 70vh; /* 40% of the viewport height */
+    }
+  
+    .cover-text {
+      margin-left: auto;
+      margin-right: 50px; /* Adjust as needed */
+    }
+  
+    .cover-text2 {
+      margin-left: auto;
+      margin-right: 50px; /* Adjust as needed */
+    }
+  
+    #content-nav {
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .content-action > button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  
+    .ct-cards {
+      width: 100%;
+    }
+  
+    .ct-info {
+      width: 100%;
+      align-items: stretch;
+      margin-top: 20px;
+    }
+  
+    .card {
+      height: auto;
+      flex-direction: column;
+      margin: 10px 0;
+    }
+  
+    .ct-img {
+      height: 200px;
+    }
+  
+    .ct-uploader {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .up-img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .share {
+      margin: 5px 0;
+      gap: 5px;
+    }
+  
+    .t2 {
+      font-size: 18px;
+    }
+  
+    .t1 {
+      font-size: 16px;
+    }
+  
+    .t3 {
+      font-size: 14px;
+    }
+  
+    .location-box {
+      width: 100%;
+    }
+  
+    .location span,
+    .disclaimer p,
+    .disclaimer p > span {
+      font-size: 14px;
+    }
+
+    .content-action {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    
+      #btn1,
+      #btn1 > select {
+        display: none; /* Hide the "Write a Post" button and the select dropdown */
+      }
+    
+      #btn2 {
+        width: 100%;
+        background-color: #2f6ce5;
+        color: #fff;
+        margin: 5px 0;
+      }
+
+      .content-type > ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-type > ul > li:not(:first-child) {
+    display: none; /* Hide other list items except the first one ("ALL Posts") */
+  }
+
+  .content-action {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  #btn1,
+  #btn1 > select {
+    display: none; /* Hide the "Write a Post" button and the select dropdown */
+  }
+
+  #btn2 {
+    width: auto;
+    background-color: #2f6ce5;
+    color: #fff;
+    margin: 0 10px;
+  }
+
+  #btn2 > span {
+    display: none; /* Hide the group icon inside the "Join Group" button */
+  }
+
+  .ct-info{
+    display: none;
+  }
+
+  .ct-uploader {
+    flex-direction: row; /* Set to row for a single line */
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .up-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .up-img > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .ct-upinfo {
+    display: flex;
+    align-items: center;
+  }
+
+  .ct-upinfo > span {
+    margin-left: 10px;
+  }
+
+  .share {
+    margin: 5px 0;
+    gap: 5px;
+  }
+}
