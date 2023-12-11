@@ -6,7 +6,7 @@
     }
   
     #poster {
-      height: 70vh; /* 40% of the viewport height */
+      height: auto; /* 40% of the viewport height */
     }
   
     .cover-text {
